@@ -3,12 +3,24 @@
 #include "Main.h"
 #include "QuickSort.h"
 
+/*********************************************************************************
+ * Adapta a função de ordenação para o formato de "algorithmType"
+ * 
+ * @param data: ponteiro para o buffer que deve ser ordenado
+ * @param len: Tamanho do buffer que será ordenado
+ ********************************************************************************/
 void quickSortConstructor(int16_t* data, uint16_t len)
 {
 	printf("Quick Sort selected...\n");
 	quickSort(data, 0, len-1, len);
 }
 
+/*********************************************************************************
+ * Ordena um vetor de inteiros ou caracteres utilizando o algoritmo quick sort
+ * 
+ * @param data: ponteiro para o buffer que deve ser ordenado
+ * @param len: Tamanho do buffer que será ordenado
+ ********************************************************************************/
 void quickSort(int16_t* data, uint16_t left, uint16_t right, uint16_t len)
 {
     static uint8_t turn = 0;
