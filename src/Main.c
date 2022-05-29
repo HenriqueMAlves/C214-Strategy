@@ -6,15 +6,17 @@
 #include "QuickSort.h"
 #include "InsertionSort.h"
 
+//Definição de um novo "tipo" para guardar funções em um vetor de ponteiros
 typedef void algorithmType(int16_t* data, uint16_t len);
 
+//Vetor de ponteiro em que cada posição aponta para um algoritmo de ordenação diferente
 algorithmType *sort[NUM_MAX_ALGORITHM] = {
 	bubbleSortContructor,
 	insertionSortContructor,
 	quickSortConstructor
 };
 
-#ifndef TEST //Necess�rio para utilizar o ceedling
+#ifndef TEST //Necessário para utilizar o ceedling
 int main(void)
 {
 	uint8_t selectedAlgorithm = QUICK_SORT;
