@@ -11,8 +11,8 @@ typedef void algorithmType(int16_t* data, uint16_t len);
 
 //Vetor de ponteiro em que cada posição aponta para um algoritmo de ordenação diferente
 algorithmType *sort[NUM_MAX_ALGORITHM] = {
-	bubbleSortContructor,
-	insertionSortContructor,
+	bubbleSortConstructor,
+	insertionSortConstructor,
 	quickSortConstructor
 };
 
