@@ -3,7 +3,7 @@
 #include "InsertionSort.h"
 #include "Main.h"
 
-void insertionSortContructor(int16_t* data, uint16_t len)
+void insertionSortConstructor(int16_t* data, uint16_t len)
 {
 	printf("Insertion Sort selected...\n");
 	insertionSort(data, len);

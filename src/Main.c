@@ -9,8 +9,8 @@
 typedef void algorithmType(int16_t* data, uint16_t len);
 
 algorithmType *sort[NUM_MAX_ALGORITHM] = {
-	bubbleSortContructor,
-	insertionSortContructor,
+	bubbleSortConstructor,
+	insertionSortConstructor,
 	quickSortConstructor
 };
 

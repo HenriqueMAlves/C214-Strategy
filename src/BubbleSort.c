@@ -3,7 +3,7 @@
 #include "BubbleSort.h"
 #include "Main.h"
 
-void bubbleSortContructor(int16_t* data, uint16_t len)
+void bubbleSortConstructor(int16_t* data, uint16_t len)
 {
 	printf("Bubble Sort selected...\n");
 	bubbleSort(data, len);
