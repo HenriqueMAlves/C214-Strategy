@@ -3,12 +3,24 @@
 #include "InsertionSort.h"
 #include "Main.h"
 
+/*********************************************************************************
+ * Adapta a função de ordenação para o formato de "algorithmType"
+ * 
+ * @param data: ponteiro para o buffer que deve ser ordenado
+ * @param len: Tamanho do buffer que será ordenado
+ ********************************************************************************/
 void insertionSortContructor(int16_t* data, uint16_t len)
 {
 	printf("Insertion Sort selected...\n");
 	insertionSort(data, len);
 }
 
+/*********************************************************************************
+ * Ordena um vetor de inteiros ou caracteres utilizando o algoritmo insertion sort
+ * 
+ * @param data: ponteiro para o buffer que deve ser ordenado
+ * @param len: Tamanho do buffer que será ordenado
+ ********************************************************************************/
 void insertionSort(int16_t* data, uint16_t len)
 {
 	uint16_t i, k; 
