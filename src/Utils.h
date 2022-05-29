@@ -1,3 +1,4 @@
+//for(EVER)
 #define EVER ;;
 
 #define TRUE 1
