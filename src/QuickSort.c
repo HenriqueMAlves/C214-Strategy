@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <stdint.h>
+#include "Main.h"
+#include "QuickSort.h"
+
+void quickSortConstructor(int16_t* data, uint16_t len)
+{
+	printf("Quick Sort selected...\n");
+	quickSort(data, 0, len-1, len);
+}
+
+void quickSort(int16_t* data, uint16_t left, uint16_t right, uint16_t len)
+{
+    static uint8_t turn = 0;
+	int16_t pivot = left;
+	uint16_t i,ch,j;
+    
+	         
+    for(i = left + 1; i <= right; i++)
+	{        
+        j = i;                      
+        if(data[j] < data[pivot])
+		{     
+            ch = data[j];               
+            while(j > pivot)
+			{           
+                data[j] = data[j-1];      
+                j--;                    
+            }
+            data[j] = ch;               
+            pivot++;                    
+        }
+    }
+    
+    turn++;
+    printf("[%d] ", turn);
+    for(i=0; i<len; i++)
+	{
+		printf(DATATYPE, data[i]);
+		printf(" ");
+	}
+	printf("\n");
+    
+    if(pivot-1 >= left)
+	{              
+        quickSort(data, left, pivot-1, len);      
+    }
+    if(pivot+1 <= right)
+	{              
+        quickSort(data, pivot+1, right, len);      
+    }
+ }
