@@ -3,12 +3,24 @@
 #include "BubbleSort.h"
 #include "Main.h"
 
+/*********************************************************************************
+ * Adapta a função de ordenação para o formato de "algorithmType"
+ * 
+ * @param data: ponteiro para o buffer que deve ser ordenado
+ * @param len: Tamanho do buffer que será ordenado
+ ********************************************************************************/
 void bubbleSortContructor(int16_t* data, uint16_t len)
 {
 	printf("Bubble Sort selected...\n");
 	bubbleSort(data, len);
 }
 
+/*********************************************************************************
+ * Ordena um vetor de inteiros ou caracteres utilizando o algoritmo bubble sort
+ * 
+ * @param data: ponteiro para o buffer que deve ser ordenado
+ * @param len: Tamanho do buffer que será ordenado
+ ********************************************************************************/
 void bubbleSort(int16_t* data, uint16_t len) 
 {
     uint16_t i, j, aux;
