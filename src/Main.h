@@ -1,6 +1,6 @@
 
-//Define para controlar o tipo de entrada: letras ("%c") ou números ("%d") 
-#define DATATYPE "%d"
+//Define para controlar o tipo de entrada: letras ("%c") ou nï¿½meros ("%d") 
+#define DATATYPE "%c"
 
 enum ENUM_SORT_ALGORITHM{
 	BUBBLE_SORT,
